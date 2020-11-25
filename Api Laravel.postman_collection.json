@@ -1,0 +1,795 @@
+{
+	"info": {
+		"_postman_id": "9c5996b5-dda2-47e0-88b6-c853a0bcf7c6",
+		"name": "Api Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Registro de usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"name\":\"Andres\", \"surname\":\"Avila\",\"email\":\"andres@andres.com\",\"password\":\"1234\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"name\":\"Andres\", \"surname\":\"Avila\",\"email\":\"andres@andres.com\",\"password\":\"1234\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"name\":\"Andres\", \"surname\":\"Ala\",\"email\":\"andres@andres.com\",\"password\":\"1234\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subir avatar de usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"name\":\"Andres\", \"surname\":\"Ala\",\"email\":\"andres@andres.com\",\"password\":\"1234\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subir avatar de usuario (imagen)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file0",
+									"type": "file",
+									"src": "/C:/Users/andres/Desktop/git.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detalles de usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file0",
+									"type": "file",
+									"src": "/C:/Users/andres/Desktop/git.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/detail/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener imagen de usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file0",
+									"type": "file",
+									"src": "/C:/Users/andres/Desktop/git.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/avatar/1606258330git.png",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"avatar",
+								"1606258330git.png"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Lista de Categorias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file0",
+									"type": "file",
+									"src": "/C:/Users/andres/Desktop/git.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar categoria ",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file0",
+									"type": "file",
+									"src": "/C:/Users/andres/Desktop/git.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar categoria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"name\":\"ordenadores asus\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Lista de Posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"title\":\"Post prueba\",\"content\":\"Contenido prueba\",\"category_id\":1,\"image\":\"imagen.png\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\"title\":\"Toshiba prueba\",\"content\":\"Contenido prueba\",\"category_id\":1,\"image\":\"imagen.png\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Post segun usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/user/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Post segun categoria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoiYW5kcmVzQGFuZHJlcy5jb20iLCJuYW1lIjoiQW5kcmVzIiwic3VybmFtZSI6IkF2aWxhIiwiZGVzY3JpcHRpb24iOm51bGwsImltYWdlIjpudWxsLCJpYXQiOjE2MDYyMzY1NTIsImV4cCI6MTYwNjg0MTM1Mn0.A4EueosChx52eLNN4uv6Hm4LXc_ugyD31qUVAvHQZ6k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/category/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
